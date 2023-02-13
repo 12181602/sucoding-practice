@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Ghost</title>
+    <link href="GhostStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="ghost">
+        <div class="body">
+            <div class="face">
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="mouse"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+        </div>
+    </div>
+    <script>
+        document.body.addEventListener("mousemove", function (e) {
+            document.querySelector('.ghost').style.left = e.pageX + 'px';
+            document.querySelector('.ghost').style.top = e.pageY + 'px';
+        })
+    </script>
+</body>
+</html>
